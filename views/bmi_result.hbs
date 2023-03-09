@@ -1,0 +1,5 @@
+BMI = (weight / (height * height));
+
+app.post('/process-bmi_calculator', urlEncodedParser, function (request, response) {
+    response.end('Your BMI is ' + BMI);
+})
